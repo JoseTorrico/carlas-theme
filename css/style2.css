@@ -1,0 +1,251 @@
+@charset "utf-8";
+@import url(https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,200,200italic,300,300italic,400italic,600,700,600italic,700italic,900,900italic);
+body{
+    background-color: grey;
+    font-size: 16px;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+header {
+    height:120px;
+    width: 100%;
+    background-color: white;
+    display:-webkit-box;
+    display:-webkit-flex;
+    display:-ms-flexbox;
+    display:flex;
+    position: fixed;
+}
+a{
+    color: black;
+}
+header div#principalCont, header div#alternativeCont{
+    width: 50%;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+}
+#logo{
+    width: 173px;
+    vertical-align: middle;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+nav{
+    vertical-align: middle;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    font-weight: 300;
+}
+ul.topnav, ul#socialMediaTop, ul#logosSecundarios {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: white;
+}
+
+ul.topnav li, ul#logosSecundarios li{
+    float: left;
+}
+
+/* Style the links inside the list items */
+ul.topnav li a{
+    display: inline-block;
+    text-align: center;
+    text-decoration: none;
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
+    color: black;
+    width: auto;
+    margin: auto 10px;
+}
+
+/* Change background color of links on hover */
+ul.topnav li a:hover {
+    color: #b31530;
+}
+/* Hide the list item that contains the link that should open and close the topnav on small screens */
+ul.topnav li.icon {
+    display: none;
+}
+
+input[type=text] {
+    width: 156px;
+    height: 30px;
+    box-sizing: border-box;
+    border: 0px none #000000;
+    border-radius: 4px;
+    background-color: #da3d57;
+    background-image: url('../images/general/search.png');
+    background-position: 10px 5px;
+    background-repeat: no-repeat;
+    padding: 12px 20px 12px 40px;
+    -webkit-transition: width 0.4s ease-in-out;
+    transition: width 0.4s ease-in-out;
+    margin: auto;
+    color: white;
+}
+
+/* When the input field gets focus, change its width to 100% */
+input[type=text]:focus {
+    width: 230px;
+    background-color: #d10d2d;
+}
+input[type=text]:hover {
+    background-color: #d10d2d;
+}
+ul#socialMediaTop, ul#logosSecundarios{
+    vertical-align: middle;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: auto;
+    margin: auto;
+}
+ul#socialMediaTop li{
+    display: inline-block;
+    margin: 0 5px;
+}
+ul#socialMediaTop li a{
+    display: inline-block;
+    text-align: center;
+    vertical-align: middle;
+    text-decoration: none;
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
+    color: white;
+    background-color: #8772a1;
+    border-radius: 4px ;
+    -moz-border-radius: 4px;
+    -webkit-border-radius: 4px;
+    height: 29px;
+    width: 37px;
+}
+ul#socialMediaTop li a span{
+    padding: 7px;
+}
+ul#socialMediaTop li a:hover{
+    background-color: #46276f;
+}
+ul#logosSecundarios li{
+    margin: 0 5px;
+}
+ul#logosSecundarios li a{
+    display: inline-block;
+    text-align: center;
+    text-decoration: none;
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
+    height: 26px;
+    width: auto;
+}
+
+/* Small Desktops */
+@media (min-width: 768px) and (max-width: 1096px){
+    
+}
+
+
+    
+/* Tablet */
+@media screen (min-width: 321px) and (max-width:767px) {
+   
+}
+
+
+
+/* Mobile */
+@media (max-width: 320px){
+     header{
+        height: 120px;
+    }
+    header div#principalCont{
+        width: 100%;
+    }
+    header div#alternativeCont{
+        width: 0;
+    }
+    #logo{
+        width: 173px;
+        vertical-align: middle;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        margin: auto;
+        padding-right: 20px;
+    }
+    
+    
+    ul.topnav {
+        position: relative;
+        margin-top: 45px;
+    }
+    ul.topnav li{
+        float: none;
+        display: inline;
+    }
+    ul.topnav li:not(:first-child)  {
+        /*visibility: hidden;*/
+        
+    }
+    ul.topnav li.icon {
+        display: inline;
+        
+    }
+    ul.topnav li.icon a{
+        display: block;
+        text-align: right;
+        margin-bottom: 40px;
+    }
+    ul.topnav li a {
+        display: block;
+        text-align: left;
+        
+    }
+    ul.topnav li:not(:first-child) a{
+        /* menu adentro sin icono de barras*/
+        height: 30px;
+        
+    }
+/* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon. This class makes the topnav look good on small screens */
+    ul.topnav.responsive {
+        position: relative;
+    }
+    ul.topnav.responsive li {
+        float: none;
+        display: inline;
+    }
+    ul.topnav.responsive li:not(:first-child)  {
+        visibility:visible;
+    }
+    ul.topnav.responsive li.icon {
+        display: inline;
+        
+    }
+    ul.topnav.responsive li.icon a{
+        display: block;
+        text-align: right;
+    }
+    ul.topnav.responsive li a {
+        display: block;
+        text-align: left
+    }
+    ul.topnav.responsive li:not(:first-child) a{
+        /* menu adentro sin icono de barras*/
+        height: 30px;
+        
+    }
+    /* ================================== */
+    input[type=text], ul#socialMediaTop, ul#logosSecundarios{
+        display: none;
+    }
+}
