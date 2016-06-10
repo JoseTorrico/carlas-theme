@@ -1,31 +1,36 @@
 @charset "utf-8";
 @import url(https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,200,200italic,300,300italic,400italic,600,700,600italic,700italic,900,900italic);
-body{
+body {
     background-color: grey;
     font-size: 16px;
     font-family: 'Source Sans Pro', sans-serif;
 }
+
 header {
-    height:120px;
+    height: 120px;
     width: 100%;
     background-color: white;
-    display:-webkit-box;
-    display:-webkit-flex;
-    display:-ms-flexbox;
-    display:flex;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
     position: fixed;
 }
-a{
+
+a {
     color: black;
 }
-header div#principalCont, header div#alternativeCont{
+
+header div#principalCont,
+header div#alternativeCont {
     width: 50%;
     display: -webkit-box;
     display: -webkit-flex;
     display: -ms-flexbox;
     display: flex;
 }
-#logo{
+
+#logo {
     width: 173px;
     vertical-align: middle;
     top: 0;
@@ -34,7 +39,8 @@ header div#principalCont, header div#alternativeCont{
     right: 0;
     margin: auto;
 }
-nav{
+
+nav {
     vertical-align: middle;
     top: 0;
     bottom: 0;
@@ -43,7 +49,10 @@ nav{
     margin: auto;
     font-weight: 300;
 }
-ul.topnav, ul#socialMediaTop, ul#logosSecundarios {
+
+ul.topnav,
+ul#socialMediaTop,
+ul#logosSecundarios {
     list-style-type: none;
     margin: 0;
     padding: 0;
@@ -51,12 +60,15 @@ ul.topnav, ul#socialMediaTop, ul#logosSecundarios {
     background-color: white;
 }
 
-ul.topnav li, ul#logosSecundarios li{
+ul.topnav li,
+ul#logosSecundarios li {
     float: left;
 }
 
+
 /* Style the links inside the list items */
-ul.topnav li a{
+
+ul.topnav li a {
     display: inline-block;
     text-align: center;
     text-decoration: none;
@@ -67,11 +79,16 @@ ul.topnav li a{
     margin: auto 10px;
 }
 
+
 /* Change background color of links on hover */
+
 ul.topnav li a:hover {
     color: #b31530;
 }
+
+
 /* Hide the list item that contains the link that should open and close the topnav on small screens */
+
 ul.topnav li.icon {
     display: none;
 }
@@ -93,15 +110,20 @@ input[type=text] {
     color: white;
 }
 
+
 /* When the input field gets focus, change its width to 100% */
+
 input[type=text]:focus {
     width: 230px;
     background-color: #d10d2d;
 }
+
 input[type=text]:hover {
     background-color: #d10d2d;
 }
-ul#socialMediaTop, ul#logosSecundarios{
+
+ul#socialMediaTop,
+ul#logosSecundarios {
     vertical-align: middle;
     top: 0;
     bottom: 0;
@@ -110,11 +132,13 @@ ul#socialMediaTop, ul#logosSecundarios{
     height: auto;
     margin: auto;
 }
-ul#socialMediaTop li{
+
+ul#socialMediaTop li {
     display: inline-block;
     margin: 0 5px;
 }
-ul#socialMediaTop li a{
+
+ul#socialMediaTop li a {
     display: inline-block;
     text-align: center;
     vertical-align: middle;
@@ -123,22 +147,26 @@ ul#socialMediaTop li a{
     transition: 0.3s;
     color: white;
     background-color: #8772a1;
-    border-radius: 4px ;
+    border-radius: 4px;
     -moz-border-radius: 4px;
     -webkit-border-radius: 4px;
     height: 29px;
     width: 37px;
 }
-ul#socialMediaTop li a span{
+
+ul#socialMediaTop li a span {
     padding: 7px;
 }
-ul#socialMediaTop li a:hover{
+
+ul#socialMediaTop li a:hover {
     background-color: #46276f;
 }
-ul#logosSecundarios li{
+
+ul#logosSecundarios li {
     margin: 0 5px;
 }
-ul#logosSecundarios li a{
+
+ul#logosSecundarios li a {
     display: inline-block;
     text-align: center;
     text-decoration: none;
@@ -148,32 +176,30 @@ ul#logosSecundarios li a{
     width: auto;
 }
 
+
 /* Small Desktops */
-@media (min-width: 768px) and (max-width: 1096px){
-    
-}
+
+@media (min-width: 768px) and (max-width: 1096px) {}
 
 
-    
 /* Tablet */
-@media screen (min-width: 321px) and (max-width:767px) {
-   
-}
 
+@media screen (min-width: 321px) and (max-width:767px) {}
 
 
 /* Mobile */
-@media (max-width: 320px){
-     header{
+
+@media (max-width: 320px) {
+    header {
         height: 120px;
     }
-    header div#principalCont{
+    header div#principalCont {
         width: 100%;
     }
-    header div#alternativeCont{
+    header div#alternativeCont {
         width: 0;
     }
-    #logo{
+    #logo {
         width: 173px;
         vertical-align: middle;
         top: 0;
@@ -183,25 +209,21 @@ ul#logosSecundarios li a{
         margin: auto;
         padding-right: 20px;
     }
-    
-    
     ul.topnav {
         position: relative;
         margin-top: 45px;
     }
-    ul.topnav li{
+    ul.topnav li {
         float: none;
         display: inline;
     }
-    ul.topnav li:not(:first-child)  {
+    ul.topnav li:not(:first-child) {
         /*visibility: hidden;*/
-        
     }
     ul.topnav li.icon {
         display: inline;
-        
     }
-    ul.topnav li.icon a{
+    ul.topnav li.icon a {
         display: block;
         text-align: right;
         margin-bottom: 40px;
@@ -209,14 +231,12 @@ ul#logosSecundarios li a{
     ul.topnav li a {
         display: block;
         text-align: left;
-        
     }
-    ul.topnav li:not(:first-child) a{
+    ul.topnav li:not(:first-child) a {
         /* menu adentro sin icono de barras*/
         height: 30px;
-        
     }
-/* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon. This class makes the topnav look good on small screens */
+    /* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon. This class makes the topnav look good on small screens */
     ul.topnav.responsive {
         position: relative;
     }
@@ -224,14 +244,13 @@ ul#logosSecundarios li a{
         float: none;
         display: inline;
     }
-    ul.topnav.responsive li:not(:first-child)  {
-        visibility:visible;
+    ul.topnav.responsive li:not(:first-child) {
+        visibility: visible;
     }
     ul.topnav.responsive li.icon {
         display: inline;
-        
     }
-    ul.topnav.responsive li.icon a{
+    ul.topnav.responsive li.icon a {
         display: block;
         text-align: right;
     }
@@ -239,13 +258,14 @@ ul#logosSecundarios li a{
         display: block;
         text-align: left
     }
-    ul.topnav.responsive li:not(:first-child) a{
+    ul.topnav.responsive li:not(:first-child) a {
         /* menu adentro sin icono de barras*/
         height: 30px;
-        
     }
     /* ================================== */
-    input[type=text], ul#socialMediaTop, ul#logosSecundarios{
+    input[type=text],
+    ul#socialMediaTop,
+    ul#logosSecundarios {
         display: none;
     }
 }

@@ -18,13 +18,10 @@
     <header>
         <div class="contenido">
             <div id="principalCont">
-                <h1 id="logo"><a href="../"><img src="images/general/logo_carla_horizontal.png" alt="Logo Carla Acebey de Sánchez"></a></h1>
+                <h1 id="logo"><a href="../"><img src="images/general/logo_carla_horizontal_retina.png" width="173" alt="Logo Carla Acebey de Sánchez"></a></h1>
                 <nav>
-                    <ul class="topnav">
-                        <li class="icon">
-                            <a href="javascript:void(0);" onclick="menuFunction()"><img src="images/general/menu.png" alt="menu"></a>
-                        </li>
-                        <li><a href="#">Inicio</a></li>
+                    <ul>
+                        <li><a href="#" class="active">Inicio</a></li>
                         <li><a href="#">Eventos</a></li>
                         <li><a href="#">Noticias</a></li>
                         <li><a href="#">Servicios</a></li>
@@ -51,58 +48,38 @@
     </header>
 
 
-    <div data-collapse="medium" data-animation="default" data-duration="400" data-contain="1" class="w-nav">
-        <div class="w-container">
-            <a href="#" class="w-nav-brand"><img width="50%" src="images/logotipo_jose_torrico.png" class="logo">
-            </a>
-            <nav role="navigation" class="w-nav-menu menu"><a href="#" class="w-nav-link">Home</a><a href="#" class="w-nav-link">About</a><a href="#" class="w-nav-link">Contact</a>
-            </nav>
-            <div class="w-nav-button">
-                <div class="w-icon-nav-menu"></div>
-            </div>
+    <!--<footer>
+        <div class="datosContacto">
+            <h3>Mantente Conectado</h3>
+            <h4>Teléfonos</h4>
+            <ul id="telefono">
+                <li><span class="fa fa-phone"></span>+58 212 715 2644</li>
+                <li><span class="fa fa-mobile"></span>+58 414 33 4886</li>
+            </ul>
+            <h4>Correos</h4>
+            <ul id="correo">
+                <li><span class="fa fa-envelope"></span><a href="mailto:info@carlaacebeydesanchez.com">info@carlaacebeydesanchez.com</a></li>
+                <li><span class="fa fa-envelope"></span><a href="mailto:carla@elpoderdelaesperanza.com">carla@elpoderdelaesperanza.com</a></li>
+            </ul>
         </div>
-    </div>
-
-
-
-
-    <!-- <footer>
-        <ul>
-           <li><h3>Mantente Conectado</h3></li>
-            <li>
-                <h4>Teléfonos</h4>
-                <ul id="telefono">
-                    <li><span class="fa phone"></span>+58 212 715 2644</li>
-                    <li><span class="fa movil-phone"></span>+58 414 33 4886</li>
-                </ul>
-            </li>
-            <li>
-                <h4>Correos</h4>
-                <ul id="correo">
-                    <li><span class="fa envelope"></span><a href="mailto:info@carlaacebeydesanchez.com">info@carlaacebeydesanchez.com</a></li>
-                    <li><span class="fa envelope"></span><a href="mailto:carla@elpoderdelaesperanza.com">carla@elpoderdelaesperanza.com</a></li>
-                </ul>
-
-            </li>
-        </ul>
         <div id="formContacto">
             <h3>Contáctanos</h3>
             <form action="contacto.php">
                 <p>
-                   <label for="nombre">Nombre: </label>
-                   <input type="text" id='nombre' tabindex="1">
-                   
+                    <label for="nombre">Nombre: </label>
+                    <input type="text" id='nombre' tabindex="1">
+
                 </p>
                 <p>
-                   <label for="correo">Email:</label>
-                   <input type="email" id="correo">
+                    <label for="correo">Email:</label>
+                    <input type="email" id="correo">
                 </p>
                 <p>
                     <label for="textArea">Mensaje:</label>
                     <textarea name="textArea" id="textArea" cols="30" rows="10"></textarea>
                 </p>
                 <p>
-                   <button type="submit">Enviar mensaje</button>
+                    <button type="submit">Enviar mensaje</button>
                 </p>
             </form>
         </div>
@@ -115,14 +92,8 @@
                 </p>
             </form>
         </div>
-        
     </footer>-->
     <script src="js/jquery-1.12.3.min.js"></script>
-    <script>
-        function menuFunction() {
-            document.getElementsByClassName("topnav")[0].classList.toggle("responsive");
-        }
-    </script>
 </body>
 
 </html>

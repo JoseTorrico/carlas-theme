@@ -1,4 +1,131 @@
 body {
-  background: linear-gradient(top, #fff, #000);
-  border-radius: 5px;
+  font-size: 16px;
+  background-color: #f2f3f3;
+}
+header {
+  width: 100%;
+  height: 120px;
+  overflow: visible;
+  position: relative;
+  background-color: #fff;
+}
+.contenido {
+  width: 1366px;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+}
+#principalCont {
+  width: 50%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+#principalCont #logo {
+  width: auto;
+  display: block;
+  margin: auto 0.5em;
+}
+#principalCont nav {
+  width: auto;
+  display: block;
+  margin: auto;
+  padding: auto;
+}
+#principalCont nav a {
+  margin: 0.5em;
+  color: #000;
+  text-transform: uppercase;
+  font-size: 14px;
+}
+#principalCont nav a:hover,
+#principalCont nav a.active {
+  border-bottom: solid;
+  border-bottom-color: #d10d2d;
+  border-bottom-width: 0.15em;
+  color: #d10d2d;
+}
+#alternativeCont {
+  width: 50%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  right: 0;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+#alternativeCont input[type=text] {
+  width: 156px;
+  height: 30px;
+  box-sizing: border-box;
+  border: 0px none #000;
+  border-radius: 4px;
+  background-color: #da3d57;
+  background-image: url("../images/general/search.png");
+  background-position: 10px 5px;
+  background-repeat: no-repeat;
+  padding: 12px 20px 12px 40px;
+  -webkit-transition: width 0.4s ease-in-out;
+  transition: width 0.4s ease-in-out;
+  margin: auto;
+  color: #fff;
+}
+#alternativeCont input[type=text]:focus {
+  width: 230px;
+  background-color: #d10d2d;
+}
+#alternativeCont input[type=text]:hover {
+  background-color: #d10d2d;
+}
+ul#socialMediaTop,
+ul#logosSecundarios {
+  display: block;
+  margin: auto;
+  padding: auto;
+}
+ul#socialMediaTop li a,
+ul#logosSecundarios li a {
+  margin: 0.5em;
+}
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+ul li {
+  float: left;
+}
+ul li a {
+  display: block;
+  text-align: center;
+  padding: 0.3em 0.5em;
+  text-decoration: none;
+}
+ul#socialMediaTop li a {
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  color: #fff;
+  background-color: #8772a1;
+  border-radius: 4px;
+  -moz-border-radius: 4px;
+  -webkit-border-radius: 4px;
+  height: 29px;
+  width: 37px;
+  padding: 0;
+}
+ul#socialMediaTop li a span {
+  padding: 7px;
+}
+ul#socialMediaTop li a:hover {
+  background-color: #4d2271;
 }

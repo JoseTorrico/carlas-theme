@@ -1,4 +1,4 @@
-// compress: false, prefix: webkit ms o moz official
+// compress: false
 //colores de carla
 rojo1 = #d10d2d
 rojo2 = #a51b4b
@@ -6,5 +6,110 @@ morado1 = #4d2271
 morado2 = #402359
 gris = #f2f3f3
 body
-    background linear-gradient(top, white, black)
-    border-radius: 5px;
+    font-size 16px
+    background-color gris
+header
+    width 100%
+    height 120px
+    overflow visible
+    position relative
+    background-color white
+.contenido
+    width 1366px
+    height 100%
+    position absolute
+    left 0
+    right 0
+    margin 0 auto
+#principalCont
+    width 50%
+    height 100%
+    position absolute
+    top 0
+    left 0
+    display -webkit-box
+    display -webkit-flex
+    display -ms-flexbox
+    display flex
+    #logo
+        width auto
+        display block
+        margin auto 0.5em
+    nav 
+        width auto
+        display block
+        margin auto
+        padding auto
+        a
+            margin 0.5em
+            color black
+            text-transform uppercase
+            font-size 14px
+        a:hover,a.active
+            border-bottom solid
+            border-bottom-color rojo1
+            border-bottom-width 0.15em
+            color rojo1
+#alternativeCont
+    width 50%
+    height 100%
+    position absolute
+    top 0
+    right 0
+    display -webkit-box
+    display -webkit-flex
+    display -ms-flexbox
+    display flex
+    input[type=text]
+        width 156px
+        height 30px
+        box-sizing border-box
+        border 0px none #000000
+        border-radius 4px
+        background-color #da3d57
+        background-image url('../images/general/search.png')
+        background-position 10px 5px
+        background-repeat no-repeat
+        padding 12px 20px 12px 40px
+        -webkit-transition width 0.4s ease-in-out
+        transition width 0.4s ease-in-out
+        margin auto
+        color white
+    input[type=text]:focus
+        width 230px
+        background-color rojo1
+    input[type=text]:hover
+        background-color rojo1
+ul#socialMediaTop, ul#logosSecundarios
+    display block
+    margin auto
+    padding auto
+    li a
+        margin 0.5em
+ul
+    list-style-type none
+    margin 0
+    padding 0
+    overflow hidden
+    li 
+        float left
+        a
+            display block
+            text-align center
+            padding .3em .5em
+            text-decoration none
+ul#socialMediaTop li a
+    -webkit-transition 0.3s
+    transition 0.3s
+    color white
+    background-color #8772a1
+    border-radius 4px
+    -moz-border-radius 4px
+    -webkit-border-radius 4px
+    height  29px
+    width  37px
+    padding 0
+    span
+        padding 7px
+ul#socialMediaTop li a:hover
+    background-color morado1
