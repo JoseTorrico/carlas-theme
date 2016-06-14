@@ -4,12 +4,23 @@ rojo2 = #a51b4b
 morado1 = #4d2271
 morado2 = #402359
 gris = #f2f3f3
+grisoscuro = #2f2f2f
+grisclaro = #aeaeae
 grilla86px = 6.29575403%
 grilla28px = 2.04978038%
 grilla14px = 1.02489019%
+@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,200,200italic,300,300italic,400italic,600,700,600italic,700italic,900,900italic')
+::-moz-selection
+    color white
+    background: rojo2
+::selection
+    color: white
+    background: rojo1
 body
     font-size 16px
-    background-color gris
+    background-color white
+    color grisoscuro
+    font-family 'Source Sans Pro', Arial, sans-serif
 header
     width 100%
     height 120px
@@ -40,15 +51,73 @@ header
         width 28%
         margin-right 1%
         margin-left 1%
+        a
+            color morado1
     form
         width 18%
         margin-left 1%
+        text-align center
     input[type=text]
+        width 90%
         height 30px
+        background-color #da3d57
+        color white
+        box-sizing border-box
+        border 0px none #000000
+        border-radius 4px
+        padding 0% 5% 0% 5%
 ul#socialMediaTop
+    display -webkit-box
+    display -webkit-flex
+    display -ms-flexbox
+    display flex
     width: 13%
+    -webkit-box-pack center
+    -webkit-justify-content center
+    -ms-flex-pack center
+    justify-content center
+    -webkit-box-align center
+    -webkit-align-items center
+    -ms-flex-align center
+    align-items: center
+    li
+        margin auto 4%
+    a
+        display -webkit-box
+        display -webkit-flex
+        display -ms-flexbox
+        display flex
+        width 35px
+        height 30px
+        -webkit-box-pack center
+        -webkit-justify-content center
+        -ms-flex-pack center
+        justify-content center
+        -webkit-box-align center
+        -webkit-align-items center
+        -ms-flex-align center
+        align-items center
+        border-radius 4px
+        background-color #8772a1
+        color white
+    a:hover
+        background-color morado1
 ul#logosSecundarios
+    display -webkit-box
+    display -webkit-flex
+    display -ms-flexbox
+    display flex
     width: 18%
+    -webkit-box-pack center
+    -webkit-justify-content center
+    -ms-flex-pack center
+    justify-content center
+    -webkit-box-align center
+    -webkit-align-items center
+    -ms-flex-align center
+    align-items: center
+    li:first-child
+        margin-right 4%
 ul
     list-style-type none
     margin 0
@@ -61,10 +130,208 @@ ul
             text-align center
             text-decoration none
 section#slider
-    width 100vw
+    width 100%
     height 100vh
     margin-top -120px
-    padding-top 120px
+    overflow hidden
     img
-        width 100%
-        height 100%
+        padding-top 120px
+section
+    width 1112px
+    padding auto
+    margin auto
+section.comentarios
+    display -webkit-box
+    display -webkit-flex
+    display -ms-flexbox
+    display flex
+    width: 1112px
+    height: 190px
+    margin-right auto
+    margin-left auto
+    -webkit-box-align center
+    -webkit-align-items center
+    -ms-flex-align center
+    align-items center
+    blockquote
+        width 65%
+        margin 1.5em 0
+        padding 0.5em 2em
+        quotes "\201C""\201D""\2018""\2019"
+        text-indent 1em
+        p
+            display inline
+    blockquote:before
+        content open-quote
+        font-size 4em
+        font-weight bold
+        color grisclaro
+        line-height 0.1em
+        float left
+        margin-left -.5em
+    blockquote:after
+        content close-quote
+        font-size 4em
+        font-weight bold
+        color grisclaro
+        line-height 0.1em
+        margin-top 0.5em
+        float right
+    .autor
+        width 30%
+        text-align center
+        padding auto
+        margin auto
+        h3
+            font-size .9em
+            text-transform capitalize
+            color grisclaro
+section#blog
+    background-color grisoscuro
+    height auto
+    width 100%
+    padding 3% 0
+    .post
+        width 1112px
+        margin-right auto
+        margin-left auto
+        article:last-child
+            margin-bottom 0
+        article
+            display -webkit-box
+            display -webkit-flex
+            display -ms-flexbox
+            display flex
+            height 250px
+            margin-bottom 3%
+            -webkit-box-align center
+            -webkit-align-items center
+            -ms-flex-align center
+            align-items center
+            background-color white
+            position relative
+            .imagen
+                width 40%
+                height 250px
+                position relative
+                z-index 6
+                a:hover
+                    background-image -webkit-linear-gradient(270deg, rgba(64, 35, 89, .7), rgba(179, 21, 48, .7))
+                    background-image linear-gradient(180deg, rgba(64, 35, 89, .7), rgba(179, 21, 48, .7))
+                    -webkit-box-shadow: 3px 0px 13px 0px rgba(0,0,0,0.6);
+                    -moz-box-shadow: 3px 0px 13px 0px rgba(0,0,0,0.6);
+                    box-shadow: 3px 0px 13px 0px rgba(0,0,0,0.6);
+                    .leer
+                        visibility visible
+                    .comentarios
+                        visibility visible
+                a
+                    width 100%
+                    height 250px
+                    position absolute
+                    z-index 5
+                    .leer
+                        top 0
+                        position absolute
+                        width 100%
+                        height 250px
+                        text-align center
+                        color white
+                        visibility hidden
+                        display -webkit-box
+                        display -webkit-flex
+                        display -ms-flexbox
+                        display flex
+                        -webkit-box-pack center
+                        -webkit-justify-content center
+                        -ms-flex-pack center
+                        justify-content center
+                        -webkit-box-align center
+                        -webkit-align-items center
+                        -ms-flex-align center
+                        align-items center
+                        font-size 1.5em
+                        z-index 4
+                    .comentarios
+                        top 0
+                        right 4%
+                        position absolute
+                        width auto
+                        height 250px
+                        color white
+                        display -webkit-box
+                        display -webkit-flex
+                        display -ms-flexbox
+                        display flex
+                        height 250px
+                        margin-bottom 3%
+                        -webkit-box-pack end
+                        -webkit-justify-content flex-end
+                        -ms-flex-pack end
+                        justify-content flex-end
+                        -webkit-box-align end
+                        -webkit-align-items flex-end
+                        -ms-flex-align: end
+                        align-items flex-end
+                        z-index 3
+                        font-size 0.8em
+                        visibility hidden
+                        i
+                            font-size 1.3em
+
+                img
+                    width 100%
+                    height 100%
+                    background-color morado1
+                    position relative
+                    z-index 2
+            .contenido
+                display inline-block
+                width 668px
+                height 250px
+                position absolute
+                top 0
+                overflow hidden
+                .tags
+                    text-transform uppercase
+                    font-size .6em
+                    padding-top 10px
+                    padding-left 1%
+                    letter-spacing 0.3em
+                    font-style italic
+                h2, p
+                    padding-left 7%
+                    padding-right 6%
+                p
+                    margin-bottom .3em
+                a
+                    text-decoration none
+                    right 20px
+                    position absolute
+                    p
+                        width 167px
+                        height 40px
+                        background-color white
+                        border 3px solid
+                        color rojo1
+                        display: -webkit-box
+                        display -webkit-flex
+                        display -ms-flexbox
+                        display flex
+                        -webkit-box-pack center
+                        -webkit-justify-content center
+                        -ms-flex-pack center
+                        justify-content center
+                        -webkit-box-align center
+                        -webkit-align-items center
+                        -ms-flex-align center
+                        align-items center
+                        font-weight 600
+                    p:hover
+                        border 3px solid rojo1
+                        background-color rojo1
+                        color white
+.left
+    float left
+.right
+    float right
