@@ -51,8 +51,26 @@ header
         width 28%
         margin-right 1%
         margin-left 1%
-        a
-            color morado1
+        ul 
+            display -webkit-box
+            display -webkit-flex
+            display -ms-flexbox
+            display flex
+            -webkit-box-pack justify
+            -webkit-justify-content space-between
+            -ms-flex-pack: justify
+            justify-content space-between
+            -webkit-box-align center
+            -webkit-align-items center
+            -ms-flex-align center
+            align-items center
+            li 
+                padding 0 2%
+                a
+                    color morado1
+                a:hover, a.active
+                    morado2
+                    border-bottom solid rojo1 1px
     form
         width 18%
         margin-left 1%
@@ -66,6 +84,13 @@ header
         border 0px none #000000
         border-radius 4px
         padding 0% 5% 0% 5%
+        -webkit-transition all .5s ease
+        -moz-transition all .5s ease
+        -o-transition all .5s ease
+        -ms-transition all .5s ease
+        transition all .5s ease
+    input[type=text]:hover, input[type=text]:focus, input[type=text]:active
+        background-color rojo1
 ul#socialMediaTop
     display -webkit-box
     display -webkit-flex
@@ -100,6 +125,11 @@ ul#socialMediaTop
         border-radius 4px
         background-color #8772a1
         color white
+        -webkit-transition all .3s ease
+        -moz-transition all .3s ease
+        -o-transition all .3s ease
+        -ms-transition all .3s ease
+        transition all .3s ease
     a:hover
         background-color morado1
 ul#logosSecundarios
@@ -118,6 +148,10 @@ ul#logosSecundarios
     align-items: center
     li:first-child
         margin-right 4%
+    li 
+        position relative
+        width auto
+        height auto
 ul
     list-style-type none
     margin 0
@@ -182,6 +216,10 @@ section.comentarios
         text-align center
         padding auto
         margin auto
+        img 
+            width 70px
+            height 70px
+            border-radius 50%
         h3
             font-size .9em
             text-transform capitalize
@@ -287,8 +325,7 @@ section#blog
                 display inline-block
                 width 668px
                 height 250px
-                position absolute
-                top 0
+                float right
                 overflow hidden
                 .tags
                     text-transform uppercase
@@ -297,10 +334,17 @@ section#blog
                     padding-left 1%
                     letter-spacing 0.3em
                     font-style italic
+                    p a.tag
+                        color grisoscuro
+                        text-decoration none
+                        margin-right 5px
+                    p a.tag:hover
+                        color rojo1
                 h2, p
                     padding-left 7%
                     padding-right 6%
-                a
+                
+                a.saberMas
                     text-decoration none
                     right 20px
                     position absolute
@@ -322,9 +366,14 @@ section#blog
                     -ms-flex-align center
                     align-items center
                     font-weight 600
-                a:hover
-                    border 3px solid rojo1
-                    background-color rojo1
+                    -webkit-transition all .5s ease
+                    -moz-transition all .5s ease
+                    -o-transition all .5s ease
+                    -ms-transition all .5s ease
+                    transition all .5s ease
+                a.saberMas:hover
+                    border 3px solid morado1
+                    background-color morado1
                     color white
     .botonBlog
         height 50px
@@ -351,6 +400,13 @@ section#blog
             color white
             font-size 1.2em
             text-decoration none
+            -webkit-transition all .5s ease
+            -moz-transition all .5s ease
+            -o-transition all .5s ease
+            -ms-transition all .5s ease
+            transition all .5s ease
+        a:hover
+            background-color morado1
 section.eComerce
     width 100%
     height auto
@@ -441,6 +497,11 @@ section.eComerce
                 align-items center
                 font-weight 600
                 font-size 1.2em
+                -webkit-transition all .5s ease
+                -moz-transition all .5s ease
+                -o-transition all .5s ease
+                -ms-transition all .5s ease
+                transition all .5s ease
             a:hover
                 border 3px solid rojo1
                 color white
@@ -511,3 +572,246 @@ section.videoIntro
         z-index 1
         width 100%
         height 100%
+footer
+    width 100%
+    height 265px
+    .pie 
+        display -webkit-box
+        display -webkit-flex
+        display -ms-flexbox
+        display flex
+        width 1112px
+        margin-right auto
+        margin-left auto
+        -webkit-box-pack justify
+        -webkit-justify-content space-between
+        -ms-flex-pack justify
+        justify-content space-between
+        -webkit-box-align baseline
+        -webkit-align-items baseline
+        -ms-flex-align baseline
+        align-items baseline
+        margin-bottom 2%
+        .datosContacto, #formBoletin
+            width 28%
+            
+            h3
+                width 100%
+                padding-bottom 5px
+                border-bottom-color rojo1
+                border-bottom-style solid
+                border-bottom-width 1px
+            h4 
+                margin 3% auto
+        ul#telefono, ul#correo
+            li 
+                float none
+                a 
+                    color grisoscuro
+                    text-decoration none
+                    text-align left
+                    -webkit-transition all .5s ease
+                    -moz-transition all .5s ease
+                    -o-transition all .5s ease
+                    -ms-transition all .5s ease
+                    transition all .5s ease
+                a:hover
+                    color grisclaro
+                    span
+                        color morado1
+                span 
+                    margin-right 5px
+                    color rojo1
+                span:hover
+                        color morado1
+        #formContacto
+            width 38%
+            h3
+                width 100%
+                padding-bottom 5px
+                border-bottom-color rojo1
+                border-bottom-style solid
+                border-bottom-width 2px
+            form 
+                width 100%
+                .col
+                    display -webkit-box
+                    display -webkit-flex
+                    display -ms-flexbox
+                    display flex
+                    -webkit-box-pack justify
+                    -webkit-justify-content space-between
+                    -ms-flex-pack justify
+                    justify-content space-between
+                    -webkit-box-align stretch
+                    -webkit-align-items stretch
+                    -ms-flex-align stretch
+                    align-items stretch
+                    
+                .col1, .col2
+                    width 47%
+                    overflow hidden
+                .col1 p input
+                    width 100%
+                    box-sizing border-box
+                    border 0px none #000000
+                    border-radius 0px
+                    padding 0% 5% 0% 5%
+                    background-color grisclaro
+                    height 30px
+                .col p textarea
+                    width 100%
+                    height 75px
+                    box-sizing border-box
+                    border 0px none #000000
+                    border-radius 0px
+                    padding 3% 5% 0% 5%
+                    background-color grisclaro
+                .boton
+                    height 40px
+                    width 100%
+                    background-color rojo1
+                    a 
+                        color white
+                        text-decoration none
+                        display: -webkit-box
+                        display -webkit-flex
+                        display -ms-flexbox
+                        display flex
+                        -webkit-box-pack center
+                        -webkit-justify-content center
+                        -ms-flex-pack center
+                        justify-content center
+                        -webkit-box-align center
+                        -webkit-align-items center
+                        -ms-flex-align center
+                        align-items center
+                        width 100%
+                        height 100%
+                        -webkit-transition all .5s ease
+                        -moz-transition all .5s ease
+                        -o-transition all .5s ease
+                        -ms-transition all .5s ease
+                        transition all .5s ease
+                    a:hover
+                        background-color morado1
+        #formBoletin
+            form 
+                padding-top 1%
+            input
+                width 90%
+                margin 0 5% 0 5%
+                box-sizing border-box
+                border 0px none #000000
+                border-radius 0px
+                padding 0% 5% 0% 5%
+                background-color grisclaro
+                height 30px
+            .boton
+                height 40px
+                width 90%
+                margin 0% 5% 0 5%
+                background-color rojo1
+                a 
+                    color white
+                    text-decoration none
+                    display: -webkit-box
+                    display -webkit-flex
+                    display -ms-flexbox
+                    display flex
+                    -webkit-box-pack center
+                    -webkit-justify-content center
+                    -ms-flex-pack center
+                    justify-content center
+                    -webkit-box-align center
+                    -webkit-align-items center
+                    -ms-flex-align center
+                    align-items center
+                    width 100%
+                    height 100%
+                    -webkit-transition all .5s ease
+                    -moz-transition all .5s ease
+                    -o-transition all .5s ease
+                    -ms-transition all .5s ease
+                    transition all .5s ease
+                a:hover
+                    background-color morado1
+    .licencia
+        display block
+        width 100%
+        height 41px
+        margin-right auto
+        margin-left auto
+        background-color grisoscuro
+        color white
+        .copyR
+            display -webkit-box
+            display -webkit-flex
+            display -ms-flexbox
+            display flex
+            width 1112px
+            margin-right auto
+            margin-left auto
+            -webkit-box-pack justify
+            -webkit-justify-content space-between
+            -ms-flex-pack justify
+            justify-content space-between
+            -webkit-box-align center
+            -webkit-align-items center
+            -ms-flex-align center
+            align-items center
+            height 100%
+            .developer
+                    width auto
+                p 
+                    margin 0
+                    font-size .6875em
+                    letter-spacing 1px
+                    a 
+                        color white
+                        text-decoration none
+                        -webkit-transition all .5s ease
+                        -moz-transition all .5s ease
+                        -o-transition all .5s ease
+                        -ms-transition all .5s ease
+                        transition all .5s ease
+                    a:hover
+                        color #1be7dd
+            ul#socialMediaDown
+                display -webkit-box
+                display -webkit-flex
+                display -ms-flexbox
+                display flex
+                -webkit-box-pack center
+                -webkit-justify-content center
+                -ms-flex-pack center
+                justify-content center
+                -webkit-box-align center
+                -webkit-align-items center
+                -ms-flex-align center
+                align-items: center
+                li
+                    margin auto 3%
+                a
+                    display -webkit-box
+                    display -webkit-flex
+                    display -ms-flexbox
+                    display flex
+                    width 35px
+                    height 30px
+                    -webkit-box-pack center
+                    -webkit-justify-content center
+                    -ms-flex-pack center
+                    justify-content center
+                    -webkit-box-align center
+                    -webkit-align-items center
+                    -ms-flex-align center
+                    align-items center
+                    color white
+                    -webkit-transition all .5s ease
+                    -moz-transition all .5s ease
+                    -o-transition all .5s ease
+                    -ms-transition all .5s ease
+                    transition all .5s ease
+                a:hover
+                    color grisclaro

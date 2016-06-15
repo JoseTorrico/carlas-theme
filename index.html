@@ -36,10 +36,10 @@
             </ul>
             <ul id="logosSecundarios">
                 <li>
-                    <a href="#"><img src="images/general/logo_esperanza.png" /></a>
+                    <img src="images/general/logo_esperanza.png" onmouseover="this.src='images/general/logo_esperanza_color.png'" onmouseout="this.src='images/general/logo_esperanza.png'" />
                 </li>
                 <li>
-                    <a href="#"><img src="images/general/logo_apoyandote.png" /></a>
+                    <img src="images/general/logo_apoyandote.png" onmouseover="this.src='images/general/logo_apoyandote_color.png'" onmouseout="this.src='images/general/logo_apoyandote.png'" />
                 </li>
             </ul>
         </div>
@@ -52,7 +52,7 @@
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip</p>
         </blockquote>
         <div class="autor">
-            <img src="images/blockquote/avatar.png">
+            <img src="images/blockquote/jt_icon.png">
             <h3>Carla Acebey</h3>
         </div>
     </section>
@@ -72,7 +72,7 @@
                 </div>
                 <div class="contenido">
                     <div class="tags">
-                        <p>autoestima</p>
+                        <p><a class="tag" href="#">autoestima</a></p>
                     </div>
                     <h2>
                         Benjamin Franklin S Method Of Habit Formation
@@ -80,7 +80,7 @@
                     <p>
                         So many of us are demotivated to achieve anything. Such people are not enthusiastic about anything. They don’t want to work towards any goal. Nothing motivates them to work. Why is it so? Why many of us are not
                     </p>
-                    <a href="#">saber más</a>
+                    <a class="saberMas" href="#">saber más</a>
                 </div>
             </article>
             <article>
@@ -97,7 +97,7 @@
                 </div>
                 <div class="contenido">
                     <div class="tags">
-                        <p>autoestima</p>
+                        <p><a class="tag" href="#">autoestima</a></p>
                     </div>
                     <h2>
                         Benjamin Franklin S Method Of Habit Formation
@@ -105,7 +105,7 @@
                     <p>
                         So many of us are demotivated to achieve anything. Such people are not enthusiastic about anything. They don’t want to work towards any goal. Nothing motivates them to work. Why is it so? Why many of us are not
                     </p>
-                    <a href="#">saber más</a>
+                    <a class="saberMas" href="#">saber más</a>
                 </div>
             </article>
             <article>
@@ -122,7 +122,7 @@
                 </div>
                 <div class="contenido">
                     <div class="tags">
-                        <p>autoestima</p>
+                        <p><a class="tag" href="#">autoestima</a></p>
                     </div>
                     <h2>
                         Benjamin Franklin S Method Of Habit Formation
@@ -130,7 +130,7 @@
                     <p>
                         So many of us are demotivated to achieve anything. Such people are not enthusiastic about anything. They don’t want to work towards any goal. Nothing motivates them to work. Why is it so? Why many of us are not
                     </p>
-                    <a href="#">saber más</a>
+                    <a class="saberMas" href="#">saber más</a>
                 </div>
             </article>
             <article>
@@ -147,7 +147,7 @@
                 </div>
                 <div class="contenido">
                     <div class="tags">
-                        <p>autoestima</p>
+                        <p><a class="tag" href="#">autoestima</a><a class="tag" href="#">educación</a></p>
                     </div>
                     <h2>
                         Benjamin Franklin S Method Of Habit Formation
@@ -155,7 +155,7 @@
                     <p>
                         So many of us are demotivated to achieve anything. Such people are not enthusiastic about anything. They don’t want to work towards any goal. Nothing motivates them to work. Why is it so? Why many of us are not
                     </p>
-                    <a href="#">saber más</a>
+                    <a class="saberMas" href="#">saber más</a>
                 </div>
             </article>
         </div>
@@ -202,48 +202,70 @@ de la abundancia</small></h3>
         <img class="fondo" src="images/general/fondo_video.jpg" alt="">
     </section>
     <footer>
-        <div class="datosContacto">
-            <h3>Mantente Conectado</h3>
-            <h4>Teléfonos</h4>
-            <ul id="telefono">
-                <li><span class="fa fa-phone"></span>+58 212 715 2644</li>
-                <li><span class="fa fa-mobile"></span>+58 414 33 4886</li>
-            </ul>
-            <h4>Correos</h4>
-            <ul id="correo">
-                <li><span class="fa fa-envelope"></span><a href="mailto:info@carlaacebeydesanchez.com">info@carlaacebeydesanchez.com</a></li>
-                <li><span class="fa fa-envelope"></span><a href="mailto:carla@elpoderdelaesperanza.com">carla@elpoderdelaesperanza.com</a></li>
-            </ul>
+        <div class="pie">
+            <div class="datosContacto">
+                <h3>Mantente Conectado</h3>
+                <h4>Teléfonos</h4>
+                <ul id="telefono">
+                    <li><a href="tel:+582127152644"><span class="fa fa-phone"></span> +58 212 715 2644</a></li>
+                    <li><a href="tel:+58414334886"><span class="fa fa-mobile"></span> +58 414 33 4886</a></li>
+                </ul>
+                <h4>Correos</h4>
+                <ul id="correo">
+                    <li><a href="mailto:info@carlaacebeydesanchez.com"><span class="fa fa-envelope"></span> info@carlaacebeydesanchez.com</a></li>
+                    <li><a href="mailto:carla@elpoderdelaesperanza.com"><span class="fa fa-envelope"></span> carla@elpoderdelaesperanza.com</a></li>
+                </ul>
+            </div>
+            <div id="formContacto">
+                <h3>Contáctanos</h3>
+                <form action="contacto.php">
+                    <div class="col">
+                        <div class="col1">
+                            <p>
+                                <input type="text" id='nombre' tabindex="1" placeholder="nombre">
+                            </p>
+                            <p>
+                                <input type="email" id="correo" placeholder="email" tabindex="2">
+                            </p>
+                        </div>
+                        <div class="col2">
+                            <p>
+                                <textarea name="textArea" id="textArea" rows="3" placeholder="mensaje" tabindex="3"></textarea>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="boton">
+                        <a href="#">enviar mensaje</a>
+                    </div>
+                </form>
+            </div>
+            <div id="formBoletin">
+                <h3>Susribete a nuestro boletin</h3>
+                <form action="boletin.php">
+                    <p>
+                        <input type="text" id="nombre" placeholder="nombre" tabindex="1">
+                    </p>
+                    <p>
+                        <input type="text" id="correo" placeholder="email" tabindex="2">
+                    </p>
+                    <div class="boton">
+                        <a href="#">suscribirse</a>
+                    </div>
+                </form>
+            </div>
         </div>
-        <div id="formContacto">
-            <h3>Contáctanos</h3>
-            <form action="contacto.php">
-                <p>
-                    <label for="nombre">Nombre: </label>
-                    <input type="text" id='nombre' tabindex="1">
-
-                </p>
-                <p>
-                    <label for="correo">Email:</label>
-                    <input type="email" id="correo">
-                </p>
-                <p>
-                    <label for="textArea">Mensaje:</label>
-                    <textarea name="textArea" id="textArea" cols="30" rows="10"></textarea>
-                </p>
-                <p>
-                    <button type="submit">Enviar mensaje</button>
-                </p>
-            </form>
-        </div>
-        <div id="formBoletin">
-            <h3>Susribete a nuestro boletin</h3>
-            <form action="boletin.php">
-                <p>
-                    <label for="nombre">Nombre:</label>
-                    <input type="text" id="nombre">
-                </p>
-            </form>
+        <div class="licencia">
+            <div class="copyR">
+                <div class="developer">
+                    <p>Copyright© 2016 Carla Acebey de Sánchez</p>
+                    <p>Desarrollado con <i class="fa fa-heart" aria-hidden="true"></i> y <i class="fa fa-coffee" aria-hidden="true"></i> por <a href="http://josetorrico.com" target="_blank">JT Agency</a></p>
+                </div>
+                <ul id="socialMediaDown">
+                    <li><a href="#"><span class="fa fa-facebook"></span></a></li>
+                    <li><a href="#"><span class="fa fa-twitter"></span></a></li>
+                    <li><a href="#"><span class="fa fa-youtube-play"></span></a></li>
+                </ul>
+            </div>
         </div>
     </footer>
     <script src="js/jquery-1.12.3.min.js"></script>
