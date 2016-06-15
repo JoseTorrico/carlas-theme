@@ -195,8 +195,6 @@ section#blog
         width 1112px
         margin-right auto
         margin-left auto
-        article:last-child
-            margin-bottom 0
         article
             display -webkit-box
             display -webkit-flex
@@ -302,36 +300,214 @@ section#blog
                 h2, p
                     padding-left 7%
                     padding-right 6%
-                p
-                    margin-bottom .3em
                 a
                     text-decoration none
                     right 20px
                     position absolute
-                    p
-                        width 167px
-                        height 40px
-                        background-color white
-                        border 3px solid
-                        color rojo1
-                        display: -webkit-box
-                        display -webkit-flex
-                        display -ms-flexbox
-                        display flex
-                        -webkit-box-pack center
-                        -webkit-justify-content center
-                        -ms-flex-pack center
-                        justify-content center
-                        -webkit-box-align center
-                        -webkit-align-items center
-                        -ms-flex-align center
-                        align-items center
-                        font-weight 600
-                    p:hover
-                        border 3px solid rojo1
-                        background-color rojo1
-                        color white
-.left
-    float left
-.right
-    float right
+                    width 167px
+                    height 40px
+                    background-color white
+                    border 3px solid
+                    color rojo1
+                    display: -webkit-box
+                    display -webkit-flex
+                    display -ms-flexbox
+                    display flex
+                    -webkit-box-pack center
+                    -webkit-justify-content center
+                    -ms-flex-pack center
+                    justify-content center
+                    -webkit-box-align center
+                    -webkit-align-items center
+                    -ms-flex-align center
+                    align-items center
+                    font-weight 600
+                a:hover
+                    border 3px solid rojo1
+                    background-color rojo1
+                    color white
+    .botonBlog
+        height 50px
+        width 1112px
+        background-color rojo1
+        margin auto
+        padding auto
+        a
+            width 100%
+            height 100%
+            display: -webkit-box
+            display -webkit-flex
+            display -ms-flexbox
+            display flex
+            -webkit-box-pack center
+            -webkit-justify-content center
+            -ms-flex-pack center
+            justify-content center
+            -webkit-box-align center
+            -webkit-align-items center
+            -ms-flex-align center
+            align-items center
+            font-weight 600
+            color white
+            font-size 1.2em
+            text-decoration none
+section.eComerce
+    width 100%
+    height auto
+    position relative
+    z-index 10
+    .titulo
+        height 100px
+        display: -webkit-box
+        display -webkit-flex
+        display -ms-flexbox
+        display flex
+        -webkit-box-pack center
+        -webkit-justify-content center
+        -ms-flex-pack center
+        justify-content center
+        -webkit-box-align center
+        -webkit-align-items center
+        -ms-flex-align center
+        align-items center
+        background-color: rgba(179, 21, 48, .5);
+        color white
+        font-size 2em
+        position relative
+        z-index 9
+        h2
+            font-weight 100
+            strong
+                font-weight 600
+    .venta
+        height 423px
+        background-image -webkit-linear-gradient(315deg, rgba(64, 35, 89, .5), rgba(179, 21, 48, .5)), -webkit-linear-gradient(270deg, rgba(64, 35, 89, .5), rgba(64, 35, 89, .5))
+        background-image linear-gradient(135deg, rgba(64, 35, 89, .5), rgba(179, 21, 48, .5)), linear-gradient(180deg, rgba(64, 35, 89, .5), rgba(64, 35, 89, .5))
+        background-position 0px 0px, 0px 0px
+        background-size auto, auto
+        background-repeat repeat, repeat
+        display -webkit-box
+        display -webkit-flex
+        display -ms-flexbox
+        display flex
+        -webkit-box-pack justify
+        -webkit-justify-content space-between
+        -ms-flex-pack justify
+        justify-content space-between
+        -webkit-box-align baseline
+        -webkit-align-items baseline
+        -ms-flex-align baseline
+        align-items baseline
+        padding-left 10%
+        padding-right 10%
+        position relative
+        z-index 8
+        .libro
+            display inline-block
+            width 236px
+            margin-top 2%
+            h3
+                color white
+                width 90%
+                font-size 1.5em
+                font-weight 300
+                font-style italic
+                margin-top 0
+                position relative
+                height 95px
+                small
+                    font-size 0.6em
+                    float right
+            img
+                height 203px
+            a
+                color white
+                width 230px
+                height 50px
+                text-decoration none
+                border 3px solid
+                color white
+                display: -webkit-box
+                display -webkit-flex
+                display -ms-flexbox
+                display flex
+                -webkit-box-pack center
+                -webkit-justify-content center
+                -ms-flex-pack center
+                justify-content center
+                -webkit-box-align center
+                -webkit-align-items center
+                -ms-flex-align center
+                align-items center
+                font-weight 600
+                font-size 1.2em
+            a:hover
+                border 3px solid rojo1
+                color white
+                background-color rojo1
+    .fondo
+        position absolute
+        top 0
+        left 0
+        z-index 1
+        width 100%
+        height 100%
+section.videoIntro
+    width 100%
+    height 712px
+    position relative
+    z-index 10
+    .titulo
+        width 100%
+        height 180px
+        display: -webkit-box
+        display -webkit-flex
+        display -ms-flexbox
+        display flex
+        -webkit-box-pack center
+        -webkit-justify-content center
+        -ms-flex-pack center
+        justify-content center
+        -webkit-box-align center
+        -webkit-align-items center
+        -ms-flex-align center
+        align-items center
+        color white
+        background-color morado1
+        text-align center
+        position relative
+        z-index 9
+        h2
+            font-weight 300
+            font-style italic
+            font-size 3em
+            strong
+                font-weight 800
+                font-style normal
+                letter-spacing 5px
+    .video
+        width 100%
+        height 532px
+        display: -webkit-box
+        display -webkit-flex
+        display -ms-flexbox
+        display flex
+        -webkit-box-pack center
+        -webkit-justify-content center
+        -ms-flex-pack center
+        justify-content center
+        -webkit-box-align center
+        -webkit-align-items center
+        -ms-flex-align center
+        align-items center
+        background-image -webkit-linear-gradient(270deg, rgba(64, 35, 89, .5), rgba(64, 35, 89, .7))
+        background-image linear-gradient(180deg, rgba(64, 35, 89, .5), rgba(64, 35, 89, .7))
+        position relative
+        z-index 8
+    .fondo
+        position absolute
+        top 0
+        left 0
+        z-index 1
+        width 100%
+        height 100%

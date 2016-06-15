@@ -215,9 +215,6 @@ section#blog .post {
   margin-right: auto;
   margin-left: auto;
 }
-section#blog .post article:last-child {
-  margin-bottom: 0;
-}
 section#blog .post article {
   display: -webkit-box;
   display: -webkit-flex;
@@ -336,15 +333,10 @@ section#blog .post article .contenido p {
   padding-left: 7%;
   padding-right: 6%;
 }
-section#blog .post article .contenido p {
-  margin-bottom: 0.3em;
-}
 section#blog .post article .contenido a {
   text-decoration: none;
   right: 20px;
   position: absolute;
-}
-section#blog .post article .contenido a p {
   width: 167px;
   height: 40px;
   background-color: #fff;
@@ -364,14 +356,213 @@ section#blog .post article .contenido a p {
   align-items: center;
   font-weight: 600;
 }
-section#blog .post article .contenido a p:hover {
+section#blog .post article .contenido a:hover {
   border: 3px solid #d10d2d;
   background-color: #d10d2d;
   color: #fff;
 }
-.left {
-  float: left;
+section#blog .botonBlog {
+  height: 50px;
+  width: 1112px;
+  background-color: #d10d2d;
+  margin: auto;
+  padding: auto;
 }
-.right {
+section#blog .botonBlog a {
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  font-weight: 600;
+  color: #fff;
+  font-size: 1.2em;
+  text-decoration: none;
+}
+section.eComerce {
+  width: 100%;
+  height: auto;
+  position: relative;
+  z-index: 10;
+}
+section.eComerce .titulo {
+  height: 100px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  background-color: rgba(179,21,48,0.5);
+  color: #fff;
+  font-size: 2em;
+  position: relative;
+  z-index: 9;
+}
+section.eComerce .titulo h2 {
+  font-weight: 100;
+}
+section.eComerce .titulo h2 strong {
+  font-weight: 600;
+}
+section.eComerce .venta {
+  height: 423px;
+  background-image: -webkit-linear-gradient(315deg, rgba(64,35,89,0.5), rgba(179,21,48,0.5)), -webkit-linear-gradient(270deg, rgba(64,35,89,0.5), rgba(64,35,89,0.5));
+  background-image: linear-gradient(135deg, rgba(64,35,89,0.5), rgba(179,21,48,0.5)), linear-gradient(180deg, rgba(64,35,89,0.5), rgba(64,35,89,0.5));
+  background-position: 0px 0px, 0px 0px;
+  background-size: auto, auto;
+  background-repeat: repeat, repeat;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: baseline;
+  -webkit-align-items: baseline;
+  -ms-flex-align: baseline;
+  align-items: baseline;
+  padding-left: 10%;
+  padding-right: 10%;
+  position: relative;
+  z-index: 8;
+}
+section.eComerce .venta .libro {
+  display: inline-block;
+  width: 236px;
+  margin-top: 2%;
+}
+section.eComerce .venta .libro h3 {
+  color: #fff;
+  width: 90%;
+  font-size: 1.5em;
+  font-weight: 300;
+  font-style: italic;
+  margin-top: 0;
+  position: relative;
+  height: 95px;
+}
+section.eComerce .venta .libro h3 small {
+  font-size: 0.6em;
   float: right;
+}
+section.eComerce .venta .libro img {
+  height: 203px;
+}
+section.eComerce .venta .libro a {
+  color: #fff;
+  width: 230px;
+  height: 50px;
+  text-decoration: none;
+  border: 3px solid;
+  color: #fff;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  font-weight: 600;
+  font-size: 1.2em;
+}
+section.eComerce .venta .libro a:hover {
+  border: 3px solid #d10d2d;
+  color: #fff;
+  background-color: #d10d2d;
+}
+section.eComerce .fondo {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  width: 100%;
+  height: 100%;
+}
+section.videoIntro {
+  width: 100%;
+  height: 712px;
+  position: relative;
+  z-index: 10;
+}
+section.videoIntro .titulo {
+  width: 100%;
+  height: 180px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  color: #fff;
+  background-color: #4d2271;
+  text-align: center;
+  position: relative;
+  z-index: 9;
+}
+section.videoIntro .titulo h2 {
+  font-weight: 300;
+  font-style: italic;
+  font-size: 3em;
+}
+section.videoIntro .titulo h2 strong {
+  font-weight: 800;
+  font-style: normal;
+  letter-spacing: 5px;
+}
+section.videoIntro .video {
+  width: 100%;
+  height: 532px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  background-image: -webkit-linear-gradient(270deg, rgba(64,35,89,0.5), rgba(64,35,89,0.7));
+  background-image: linear-gradient(180deg, rgba(64,35,89,0.5), rgba(64,35,89,0.7));
+  position: relative;
+  z-index: 8;
+}
+section.videoIntro .fondo {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  width: 100%;
+  height: 100%;
 }
