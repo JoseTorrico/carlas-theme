@@ -8,6 +8,7 @@ grisoscuro = #2f2f2f
 grisclaro = #aeaeae
 detalles = #fafafa
 bordeDetalles =#e5e5e5
+amarillo = #f4a104
 /*grilla86px = 6.29575403%
 grilla28px = 2.04978038%
 grilla14px = 1.02489019%*/
@@ -394,7 +395,7 @@ section#blog
                     border 3px solid rojo1
                     background-color rojo1
                     color white
-    .botonBlog, .botonEvents
+    .botonBlog
         height 50px
         width 1112px
         background-color rojo1
@@ -496,37 +497,244 @@ section#blog
                     align-items flex-start
                     overflow hidden
                     .fecha
-                        width 21%
-                        padding-left  4%
+                        width 15%
                         padding 19px
+                        padding-left  4%
                         i
-                            font-size 4.5em
+                            font-size 4em
                         h3
                             text-transform uppercase
+                            margin-top 5px
+                            margin-bottom 0
+                        p.dia
+                            margin-top 0
+                            font-size 1.5em
+                            margin-bottom 0
+                            sup 
+                                font-size .6em
+                        p.mes 
+                            margin-top 0
+                            font-size .875em
+                            margin-bottom 5px
                     .horaLugar
-                        width 43%
-                        padding-left  4%
-                        padding-top 19px
+                        width 46%
                         border-left 1px solid bordeDetalles
                         border-right 1px solid bordeDetalles
-                        i
-                            font-size 3em
-                        h3
-                            text-transform uppercase
+                        height 100%
                     .costo
-                        width 36%
-                        padding-left  4%
-                        padding-top 19px
-                        h3
-                            text-transform uppercase
+                        width 39%
+                        height 100%
+                    .horaLugar .distribucion, .costo .distribucion
+                        display -webkit-box
+                        display -webkit-flex
+                        display -ms-flexbox
+                        display flex
                         i
                             font-size 3em
+                            display -webkit-box
+                            display -webkit-flex
+                            display -ms-flexbox
+                            display flex
+                            width 25%
+                            -webkit-box-pack center
+                            -webkit-justify-content center
+                            -ms-flex-pack center
+                            justify-content center
+                            margin-top 15px
+                            margin-bottom 10px
+                        .contenido
+                            width 75%
+                            h3
+                                text-transform uppercase
+                                margin-top 10px
+                                margin-bottom 5px
+                            p 
+                                margin-top 0
+                                margin-bottom 7px
+                                font-size .875em
                 .borde
                     height 100%
                     width 2%
                     background-color morado1
-    .botonEvents
-        width 880px
+            .importante
+                height 88px
+                display -webkit-box
+                display -webkit-flex
+                display -ms-flexbox
+                display flex
+                -webkit-box-pack center
+                -webkit-justify-content center
+                -ms-flex-pack center
+                justify-content center
+                -webkit-box-align start
+                -webkit-align-items flex-start
+                -ms-flex-align start
+                align-items flex-start
+                .borde
+                    height 100%
+                    width 2%
+                    background-color amarillo
+                .detalles
+                    background-color detalles
+                    width 98%
+                    height 88px
+                    border-top 0px solid bordeDetalles
+                    border-bottom 2px solid bordeDetalles
+                    border-right 2px solid bordeDetalles
+                    display -webkit-box
+                    display -webkit-flex
+                    display -ms-flexbox
+                    display flex
+                    -webkit-box-align start
+                    -webkit-align-items flex-start
+                    -ms-flex-align start
+                    align-items flex-start
+                    i 
+                        font-size 3.5625em
+                        display -webkit-box
+                        display -webkit-flex
+                        display -ms-flexbox
+                        display flex
+                        width 5%
+                        -webkit-box-pack center
+                        -webkit-justify-content center
+                        -ms-flex-pack center
+                        justify-content center
+                        margin-top 15px
+                        margin-bottom 10px
+                        padding-left 4%
+                    .contenido
+                        width 95%
+                        h3 
+                            text-transform uppercase
+                            margin-top 0
+                            margin-bottom 5px
+                        p 
+                            margin 0
+                            font-size .95em
+                            font-style italic
+                            font-weight 700
+                        p.condicion
+                            margin 0
+                            font-size .625em
+                            text-align right
+            .organizador
+                height 130px
+                overflow hidden
+                width 100%
+                display -webkit-box
+                display -webkit-flex
+                display -ms-flexbox
+                display flex
+                -webkit-box-pack center
+                -webkit-justify-content center
+                -ms-flex-pack center
+                justify-content center
+                -webkit-box-align start
+                -webkit-align-items flex-start
+                -ms-flex-align start
+                align-items flex-start
+                .detalles
+                    background-color detalles
+                    width 98%
+                    height 130px
+                    border-top 2px solid bordeDetalles
+                    border-bottom 2px solid bordeDetalles
+                    border-left 2px solid bordeDetalles
+                    display -webkit-box
+                    display -webkit-flex
+                    display -ms-flexbox
+                    display flex
+                    -webkit-box-orient vertical
+                    -webkit-box-direction normal
+                    -webkit-flex-direction column
+                    -ms-flex-direction column
+                    flex-direction column
+                    -webkit-box-align start
+                    -webkit-align-items flex-start
+                    -ms-flex-align start
+                    align-items flex-start
+                    h3
+                        text-transform uppercase
+                        margin 0 0 0 6%
+                    .contenido
+                        display -webkit-box
+                        display -webkit-flex
+                        display -ms-flexbox
+                        display flex
+                        -webkit-box-align start
+                        -webkit-align-items flex-start
+                        -ms-flex-align start
+                        align-items flex-start
+                        .foto 
+                            width 110px
+                            margin-left 6%
+                            img
+                                width 66px
+                                height 66px
+                                border-radius 50%
+                        .detalle
+                            width 293px
+                            h4
+                                margin 0
+                                font-size .9em
+                            h4.nombre
+                                margin-top 10px
+                                margin-bottom 5px
+                                font-weight 700
+                                font-style italic
+                            h4.cargo
+                                font-weight 600
+                                font-size .8em
+                        .contacto
+                            width 237px
+                            a 
+                                margin 0
+                                font-size .9em
+                                text-decoration none
+                                color grisoscuro
+                                p 
+                                    margin 0
+                            a:hover
+                                color rojo1
+                        .social
+                            width 188px
+                            display -webkit-box
+                            display -webkit-flex
+                            display -ms-flexbox
+                            display flex
+                            -webkit-box-pack center
+                            -webkit-justify-content center
+                            -ms-flex-pack center
+                            justify-content center
+                            -webkit-box-align center
+                            -webkit-align-items center
+                            -ms-flex-align center
+                            align-items center
+                            margin-top 15px
+                            li 
+                                margin-right 5px
+                                width 20px
+                                a 
+                                    color grisoscuro
+                                a:hover
+                                    color rojo1
+                            li:last-child
+                                margin-right 0
+                .borde
+                    height 100%
+                    width 2%
+                    background-color rojo1
+            .quieroIr
+                width 167px
+                height 40px
+                background-color rojo1
+                text-align center
+                a 
+                    color white
+                    text-decoration none
+                    i 
+                        margin-right 5px
 section.eComerce
     width 100%
     height auto
