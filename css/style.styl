@@ -431,10 +431,13 @@ section#blog
         width 880px
         margin auto
         padding auto
+        article:last-child
+            margin-bottom 0
         article
             background-color white
             width 100%
             height auto
+            margin-bottom 30px
             .imagen
                 width 100%
                 height 495px
@@ -637,7 +640,7 @@ section#blog
                 .detalles
                     background-color detalles
                     width 98%
-                    height 130px
+                    height 126px
                     border-top 2px solid bordeDetalles
                     border-bottom 2px solid bordeDetalles
                     border-left 2px solid bordeDetalles
@@ -662,24 +665,24 @@ section#blog
                         display -webkit-flex
                         display -ms-flexbox
                         display flex
-                        -webkit-box-align start
-                        -webkit-align-items flex-start
-                        -ms-flex-align start
-                        align-items flex-start
+                        -webkit-box-align center
+                        -webkit-align-items center
+                        -ms-flex-align center
+                        align-items center
+                        width 98%
                         .foto 
-                            width 110px
+                            width 13%
                             margin-left 6%
                             img
                                 width 66px
                                 height 66px
                                 border-radius 50%
                         .detalle
-                            width 293px
+                            width 37%
                             h4
                                 margin 0
                                 font-size .9em
                             h4.nombre
-                                margin-top 10px
                                 margin-bottom 5px
                                 font-weight 700
                                 font-style italic
@@ -687,7 +690,7 @@ section#blog
                                 font-weight 600
                                 font-size .8em
                         .contacto
-                            width 237px
+                            width 28%
                             a 
                                 margin 0
                                 font-size .9em
@@ -698,7 +701,7 @@ section#blog
                             a:hover
                                 color rojo1
                         .social
-                            width 188px
+                            width 22%
                             display -webkit-box
                             display -webkit-flex
                             display -ms-flexbox
@@ -711,10 +714,9 @@ section#blog
                             -webkit-align-items center
                             -ms-flex-align center
                             align-items center
-                            margin-top 15px
                             li 
                                 margin-right 5px
-                                width 20px
+                                width 22px
                                 a 
                                     color grisoscuro
                                 a:hover
@@ -726,15 +728,55 @@ section#blog
                     width 2%
                     background-color rojo1
             .quieroIr
-                width 167px
+                width 150px
                 height 40px
                 background-color rojo1
-                text-align center
+                margin-top -20px
+                position relative
+                margin-left 79.6%
                 a 
                     color white
                     text-decoration none
+                    color white
+                    text-decoration none
+                    display -webkit-box
+                    display -webkit-flex
+                    display -ms-flexbox
+                    display flex
+                    -webkit-box-pack center
+                    -webkit-justify-content center
+                    -ms-flex-pack center
+                    justify-content center
+                    -webkit-box-align center
+                    -webkit-align-items center
+                    -ms-flex-align center
+                    align-items center
+                    width 100%
+                    height 100%
+                    -webkit-transition all .5s ease
+                    -moz-transition all .5s ease
+                    -o-transition all .5s ease
+                    -ms-transition all .5s ease
+                    transition all .5s ease
                     i 
                         margin-right 5px
+                a:hover
+                    background-color morado1
+            .compartirSocial
+                height 60px
+                width 100%
+                display -webkit-box
+                display -webkit-flex
+                display -ms-flexbox
+                display flex
+                -webkit-box-pack center
+                -webkit-justify-content center
+                -ms-flex-pack center
+                justify-content center
+                -webkit-box-align center
+                -webkit-align-items center
+                -ms-flex-align center
+                align-items center
 section.eComerce
     width 100%
     height auto
