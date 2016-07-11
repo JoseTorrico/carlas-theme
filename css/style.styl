@@ -29,6 +29,7 @@ header
     height 120px
     background-color white
     position relative
+    z-index 10000
 .contenido
     display -webkit-box
     display -webkit-flex
@@ -181,8 +182,163 @@ section#slider
     height 100vh
     margin-top -120px
     overflow hidden
+    position relative
+    display -webkit-box
+    display -webkit-flex
+    display -ms-flexbox
+    display flex
+    -webkit-box-pack center
+    -webkit-justify-content center
+    -ms-flex-pack center
+    justify-content center
+    -webkit-box-align center
+    -webkit-align-items center
+    -ms-flex-align center
+    align-items center
+    .Er404
+        width 100%
+        height 100%
+        top 120px
+        background-image -webkit-linear-gradient(0deg, rgba(48, 48, 48, 0.5), rgba(48, 48, 48, 0.5))
+        background-image linear-gradient(90deg, rgba(48, 48, 48, 0.5), rgba(48, 48, 48, 0.5))
+        position absolute
+        display -webkit-box
+        display -webkit-flex
+        display -ms-flexbox
+        display flex
+        -webkit-box-orient vertical
+        -webkit-box-direction normal
+        -webkit-flex-direction column
+        -ms-flex-directio column
+        flex-direction column
+        -webkit-box-pack center
+        -webkit-justify-content center
+        -ms-flex-pack center
+        justify-content center
+        -webkit-box-align center
+        -webkit-align-items center
+        -ms-flex-align center
+        align-items center
+        margin-top -60px
+        p   
+            color white
+            display -webkit-box
+            display -webkit-flex
+            display -ms-flexbox
+            display flex
+            -webkit-box-pack center
+            -webkit-justify-content center
+            -ms-flex-pack center
+            justify-content center
+            -webkit-box-align center
+            -webkit-align-items center
+            -ms-flex-align center
+            align-items center
+            font-size 4em
+            margin 0
+        p.numero
+            font-weight 900
+            font-size 9em
+        p.texto
+            font-weight 300
+        .boton
+            color white
+            display -webkit-box
+            display -webkit-flex
+            display -ms-flexbox
+            display flex
+            -webkit-box-pack center
+            -webkit-justify-content center
+            -ms-flex-pack center
+            justify-content center
+            -webkit-box-align center
+            -webkit-align-items center
+            -ms-flex-align center
+            align-items center
+            a
+                color white
+                text-decoration none
+                width 167px
+                height 40px
+                background-color rojo1
+                display -webkit-box
+                display -webkit-flex
+                display -ms-flexbox
+                display flex
+                -webkit-box-pack center
+                -webkit-justify-content center
+                -ms-flex-pack center
+                justify-content center
+                -webkit-box-align center
+                -webkit-align-items center
+                -ms-flex-align center
+                align-items center
+                -webkit-transition all .5s ease-in-out
+                -moz-transition all .5s ease-in-out
+                -o-transition all .5s ease-in-out
+                -ms-transition all .5s ease-in-out
+                transition all .5s ease-in-out
+            a:hover
+                background-color morado1
+    .sobre
+        width 100%
+        height 100%
+        top 120px
+        background-image -webkit-linear-gradient(0deg, rgba(77, 34, 113, .7), rgba(209, 13, 45, .7))
+        background-image linear-gradient(90deg, rgba(77, 34, 113, .7), rgba(209, 13, 45, .7))
+        -webkit-transition opacity .5s ease-in-out
+        -moz-transition opacity .5s ease-in-out
+        -o-transition opacity .5s ease-in-out
+        -ms-transition opacity .5s ease-in-out
+        transition opacity .5s ease-in-out
+        position absolute
     img
         padding-top 120px
+        width 100%
+        height 100%
+section#sliderSmall
+    width 100%
+    height 160px
+    position relative
+    overflow hidden
+    h2
+        color white
+        text-transform uppercase
+        font-size 3.75em
+        display -webkit-box
+        display -webkit-flex
+        display -ms-flexbox
+        display flex
+        -webkit-box-pack center
+        -webkit-justify-content center
+        -ms-flex-pack center
+        justify-content center
+        -webkit-box-align center
+        -webkit-align-items center
+        -ms-flex-align center
+        align-items center
+        position absolute
+        width 100%
+        height 100%
+        z-index 22
+        font-weight 400
+        letter-spacing 5px
+        margin 0
+    .sobre
+        width 100%
+        height 160px
+        background-image -webkit-linear-gradient(0deg, rgba(77, 34, 113, .7), rgba(209, 13, 45, .7))
+        background-image linear-gradient(90deg, rgba(77, 34, 113, .7), rgba(209, 13, 45, .7))
+        -webkit-transition opacity .5s ease-in-out
+        -moz-transition opacity .5s ease-in-out
+        -o-transition opacity .5s ease-in-out
+        -ms-transition opacity .5s ease-in-out
+        transition opacity .5s ease-in-out
+        position absolute
+        z-index 21
+    img
+        width 100%
+        height 100%
 section
     width 1112px
     padding auto
@@ -334,7 +490,6 @@ section#blog
                         visibility hidden
                         i
                             font-size 1.3em
-
                 img
                     width 100%
                     height 100%
@@ -440,29 +595,11 @@ section#blog
             margin-bottom 30px
             .imagen
                 width 100%
-                height 495px
+                height 250px
                 position relative
                 img
                     width 100%
                     height 100%
-                .sobre
-                    width 100%
-                    height 100%
-                    position absolute
-                    background-image -webkit-linear-gradient(270deg, rgba(64, 35, 89, .7), rgba(179, 21, 48, .7))
-                    background-image linear-gradient(180deg, rgba(64, 35, 89, .7), rgba(179, 21, 48, .7))
-                    opacity 0
-                    -webkit-box-shadow 0px 5px 13px 0px rgba(0,0,0,0.6)
-                    -moz-box-shadow 0px 5px 13px 0px rgba(0,0,0,0.6)
-                    box-shadow 0px 5px 13px 0px rgba(0,0,0,0.6)
-                    -webkit-transition opacity .5s ease-in-out
-                    -moz-transition opacity .5s ease-in-out
-                    -o-transition opacity .5s ease-in-out
-                    -ms-transition opacity .5s ease-in-out
-                    transition opacity .5s ease-in-out
-            .imagen:hover
-                .sobre
-                    opacity 1
             .contenido
                 display inline-block
                 overflow hidden
@@ -551,6 +688,13 @@ section#blog
                                 text-transform uppercase
                                 margin-top 10px
                                 margin-bottom 5px
+                                sup
+                                    text-transform lowercase
+                                    color red
+                                    margin 0
+                                    visibility hidden
+                                sup.finalizado
+                                    visibility visible
                             p 
                                 margin-top 0
                                 margin-bottom 7px
@@ -942,6 +1086,612 @@ section.videoIntro
         z-index 1
         width 100%
         height 100%
+.blogContainer
+    background-color grisoscuro
+    height auto
+    width 100%
+    .blogContainerOnSize
+        width 1112px
+        height auto
+        padding 3% 0
+        display -webkit-box
+        display -webkit-flex
+        display -ms-flexbox
+        display flex
+        margin-right auto
+        margin-left auto
+        -webkit-box-pack justify
+        -webkit-justify-content space-between
+        -ms-flex-pack justify
+        justify-content space-between
+        section.blog
+            width 69%
+            .pagination
+                width 100%
+                height 40px
+                background-color white
+                display -webkit-box
+                display -webkit-flex
+                display -ms-flexbox
+                display flex
+                -webkit-box-pack justify
+                -webkit-justify-content space-between
+                -ms-flex-pack justify
+                justify-content space-between
+                -webkit-box-align center
+                -webkit-align-items center
+                -ms-flex-align center
+                align-items center
+                a  
+                    text-decoration none
+                    color grisoscuro
+                    margin 0 3%
+                    font-weight 600
+                    -webkit-transition all .5s ease-in-out
+                    -moz-transition all .5s ease-in-out
+                    -o-transition all .5s ease-in-out
+                    -ms-transition all .5s ease-in-out
+                    transition all .5s ease-in-out
+                a:hover
+                    color rojo1
+                .disable, .disable:hover
+                    color grisclaro
+                ul 
+                    height 100%
+                    li
+                        margin-right 15px
+                        height 100%
+                        display -webkit-box
+                        display -webkit-flex
+                        display -ms-flexbox
+                        display flex
+                        -webkit-box-pack center
+                        -webkit-justify-content center
+                        -ms-flex-pack center
+                        justify-content center
+                        -webkit-box-align center
+                        -webkit-align-items center
+                        -ms-flex-align center
+                        align-items center
+                        a 
+                            height 35px
+                            width 35px
+                            display -webkit-box
+                            display -webkit-flex
+                            display -ms-flexbox
+                            display flex
+                            -webkit-box-pack center
+                            -webkit-justify-content center
+                            -ms-flex-pack center
+                            justify-content center
+                            -webkit-box-align center
+                            -webkit-align-items center
+                            -ms-flex-align center
+                            align-items center
+                            -webkit-transition all .5s ease-in-out
+                            -moz-transition all .5s ease-in-out
+                            -o-transition all .5s ease-in-out
+                            -ms-transition all .5s ease-in-out
+                            transition all .5s ease-in-out
+                            border-radius 50%
+                        a:hover, a.active
+                            color white
+                            background-color rojo1
+            article
+                height 293px
+                display -webkit-box
+                display -webkit-flex
+                display -ms-flexbox
+                display flex
+                margin-bottom 30px
+                .visual
+                    background-color #f2f3f3
+                    width 56%
+                    height 100%
+                    display block
+                    .imagen
+                        height 83%
+                        overflow hidden
+                        position relative
+                        a:hover
+                            opacity 1
+                            .leer
+                                visibility visible
+                        a
+                            width 100%
+                            height 100%
+                            position absolute
+                            z-index 5
+                            background-image -webkit-linear-gradient(270deg, rgba(64, 35, 89, .7), rgba(179, 21, 48, .7))
+                            background-image linear-gradient(180deg, rgba(64, 35, 89, .7), rgba(179, 21, 48, .7))
+                            opacity 0
+                            -webkit-transition opacity .5s ease-in-out
+                            -moz-transition opacity .5s ease-in-out
+                            -o-transition opacity .5s ease-in-out
+                            -ms-transition opacity .5s ease-in-out
+                            transition opacity .5s ease-in-out
+                            .leer
+                                top 0
+                                position absolute
+                                width 100%
+                                height 250px
+                                text-align center
+                                color white
+                                visibility hidden
+                                display -webkit-box
+                                display -webkit-flex
+                                display -ms-flexbox
+                                display flex
+                                -webkit-box-pack center
+                                -webkit-justify-content center
+                                -ms-flex-pack center
+                                justify-content center
+                                -webkit-box-align center
+                                -webkit-align-items center
+                                -ms-flex-align center
+                                align-items center
+                                font-size 1.5em
+                                z-index 4
+                        img 
+                            height 100%
+                            width 100%
+                    .autor
+                        height 17%
+                        display -webkit-box
+                        display -webkit-flex
+                        display -ms-flexbox
+                        display flex
+                        -webkit-box-pack justify
+                        -webkit-justify-content space-between
+                        -ms-flex-pack justify
+                        justify-content space-between
+                        -webkit-box-align center
+                        -webkit-align-items center
+                        -ms-flex-align center
+                        align-items center
+                        .datos
+                            height 100%
+                            width 60%
+                            display -webkit-box
+                            display -webkit-flex
+                            display -ms-flexbox
+                            display flex
+                            -webkit-box-pack start
+                            -webkit-justify-content flex-start
+                            -ms-flex-pack start
+                            justify-content flex-start
+                            -webkit-box-align center
+                            -webkit-align-items center
+                            -ms-flex-align center
+                            align-items center
+                            img 
+                                height 80%
+                                border-radius 50%
+                                border 2px solid white
+                                margin-left 15px
+                            h4
+                                text-transform capitalize
+                                font-weight 400
+                                margin-left 10px
+                        .social
+                            width 40%
+                            height 100%
+                            display -webkit-box
+                            display -webkit-flex
+                            display -ms-flexbox
+                            display flex
+                            -webkit-box-pack end
+                            -webkit-justify-content flex-end
+                            -ms-flex-pack end
+                            justify-content flex-end
+                            -webkit-box-align center
+                            -webkit-align-items center
+                            -ms-flex-align center
+                            align-items center
+                            ul
+                                margin-right 10px
+                                li 
+                                    margin-right 10px
+                                    a 
+                                        color grisoscuro
+                                        -webkit-transition all .3s ease-in-out
+                                        -moz-transition all .3s ease-in-out
+                                        -o-transition all .3s ease-in-out
+                                        -ms-transition all .3s ease-in-out
+                                        transition all .3s ease-in-out
+                                    a:hover
+                                        color rojo1
+                .contenido
+                    width 44%
+                    background-color white
+                    height 100%
+                    display block
+                    .texto
+                        height 83%
+                        overflow hidden
+                        .tags
+                            text-transform uppercase
+                            font-size .6em
+                            padding-top 10px
+                            padding-left 1%
+                            letter-spacing 0.3em
+                            font-style italic
+                            p a.tag
+                                color grisoscuro
+                                text-decoration none
+                                margin-right 5px
+                            p a.tag:hover
+                                color rojo1
+                        h2, p
+                            padding-left 7%
+                            padding-right 6%
+                            margin 0
+                        h2 
+                            margin-top 10px
+                            text-transform capitalize
+                        p 
+                            margin-top 10px
+                    .boton
+                        height 17%
+                        display -webkit-box
+                        display -webkit-flex
+                        display -ms-flexbox
+                        display flex
+                        -webkit-box-pack end
+                        -webkit-justify-content flex-end
+                        -ms-flex-pack end
+                        justify-content flex-end
+                        -webkit-box-align center
+                        -webkit-align-items center
+                        -ms-flex-align center
+                        align-items center
+                        margin-right 20px
+                        a 
+                            width 119px
+                            height 35px
+                            background-color rojo1
+                            display -webkit-box
+                            display -webkit-flex
+                            display -ms-flexbox
+                            display flex
+                            -webkit-box-pack center
+                            -webkit-justify-content center
+                            -ms-flex-pack center
+                            justify-content center
+                            -webkit-box-align center
+                            -webkit-align-items center
+                            -ms-flex-align center
+                            align-items center
+                            color white
+                            text-decoration none
+                            -webkit-transition all .3s ease-in-out
+                            -moz-transition all .3s ease-in-out
+                            -o-transition all .3s ease-in-out
+                            -ms-transition all .3s ease-in-out
+                            transition all .3s ease-in-out
+                        a:hover
+                            background-color morado1
+        aside
+            width 28%
+            background-color aqua
+.noticiaContainer
+    height auto
+    width 1112px
+    padding 3% 0
+    display -webkit-box
+    display -webkit-flex
+    display -ms-flexbox
+    display flex
+    margin-right auto
+    margin-left auto
+    -webkit-box-pack justify
+    -webkit-justify-content space-between
+    -ms-flex-pack justify
+    justify-content space-between
+    section 
+        width 69%
+        article
+            width 100%
+            .pia
+                display -webkit-box
+                display -webkit-flex
+                display -ms-flexbox
+                display flex
+                width 100%
+                .imagen
+                    width 27%
+                    height auto
+                    overflow hidden
+                    img 
+                        height 100%
+                        width 100%
+                .contenido
+                    width 73%
+                    display block
+                    height auto
+                    p
+                        margin-left 3%
+                    li
+                        list-style-type square
+            .empoderamiento
+                li 
+                    list-style-type disc
+            .maximizate
+                display -webkit-box
+                display -webkit-flex
+                display -ms-flexbox
+                display flex
+                width 100%
+                .libro
+                    width 27%
+                    height 321px
+                    overflow hidden
+                    img 
+                        height 100%
+                        width 100%
+                .descripcion
+                    width 73%
+                    p
+                        margin-left 3%
+                    h3, sub
+                        margin 0
+                        margin-left 3%
+            .tags
+                text-transform uppercase
+                font-size .6em
+                padding-top 10px
+                padding-left 1%
+                letter-spacing 0.3em
+                font-style italic
+                font-weight 500
+                p a.tag
+                    color grisoscuro
+                    text-decoration none
+                    margin-right 5px
+                p a.tag:hover
+                    color rojo1
+                p a.tag:after
+                    content ' -'
+                p a.tag:last-child:after
+                    content none
+            h2 
+                text-transform capitalize
+            p 
+                line-height 25px
+                font-size 1.1em
+            img 
+                width 100%
+            .compartir
+                display -webkit-box
+                display -webkit-flex
+                display -ms-flexbox
+                display flex
+                -webkit-box-pack end
+                -webkit-justify-content flex-end
+                -ms-flex-pack end
+                justify-content flex-end
+                -webkit-box-align center
+                -webkit-align-items center
+                -ms-flex-align center
+                align-items center
+                margin-right 5%
+                margin-bottom 3%
+                a 
+                    text-decoration none
+                    color grisoscuro
+                    text-align right
+            .autor
+                border-top 2px solid bordeDetalles
+                display -webkit-box
+                display -webkit-flex
+                display -ms-flexbox
+                display flex
+                -webkit-box-align center
+                -webkit-align-items center
+                -ms-flex-align center
+                align-items center
+                width 100%
+                padding-top 2%
+                .imagen 
+                    width 20%
+                    display -webkit-box
+                    display -webkit-flex
+                    display -ms-flexbox
+                    display flex
+                    -webkit-box-pack center
+                    -webkit-justify-content center
+                    -ms-flex-pack center
+                    justify-content center
+                    -webkit-box-align center
+                    -webkit-align-items center
+                    -ms-flex-align center
+                    align-items center
+                    img 
+                        height 105px
+                        width 105px
+                        border-radius 50%
+                .contenido
+                    width 80%
+                    display block
+                    position relative
+                    .nombreRedes
+                        display -webkit-box
+                        display -webkit-flex
+                        display -ms-flexbox
+                        display flex
+                        -webkit-box-pack justify
+                        -webkit-justify-content space-between
+                        -ms-flex-pack justify
+                        justify-content space-between
+                        -webkit-box-align center
+                        -webkit-align-items center
+                        -ms-flex-align center
+                        align-items center
+                        height 20%
+                        h4
+                            font-weight 500
+                            text-transform capitalize
+                            strong
+                                color rojo1
+                        .social
+                            width 40%
+                            height 100%
+                            display -webkit-box
+                            display -webkit-flex
+                            display -ms-flexbox
+                            display flex
+                            -webkit-box-pack end
+                            -webkit-justify-content flex-end
+                            -ms-flex-pack end
+                            justify-content flex-end
+                            -webkit-box-align center
+                            -webkit-align-items center
+                            -ms-flex-align center
+                            align-items center
+                            ul
+                                margin-right 10px
+                                li 
+                                    margin-right 10px
+                                    a 
+                                        color grisoscuro
+                                        -webkit-transition all .3s ease-in-out
+                                        -moz-transition all .3s ease-in-out
+                                        -o-transition all .3s ease-in-out
+                                        -ms-transition all .3s ease-in-out
+                                        transition all .3s ease-in-out
+                                    a:hover
+                                        color rojo1
+                    p 
+                        font-size .7em
+                        color grisclaro
+                        padding-right 2%
+    aside 
+        width 28%
+        background-color aqua
+.linea
+    width 100%
+    height 10px
+    background-color morado1
+section.recomendaciones
+            height 383px
+            width 100%
+            background-color green
+            overflow hidden
+            position relative
+            .sobre
+                width 100%
+                height 100%
+                position absolute
+                background-image -webkit-linear-gradient(0deg, rgba(77, 34, 113, .7), rgba(209, 13, 45, .7))
+                background-image linear-gradient(90deg, rgba(77, 34, 113, .7), rgba(209, 13, 45, .7))
+                .contenido
+                    display block
+                    width 1112px
+                    height 100%
+                    h2
+                        font-weight 300
+                        font-style italic
+                        font-size 1.875em
+                        color white
+                    .noticias
+                        display -webkit-box
+                        display -webkit-flex
+                        display -ms-flexbox
+                        display flex
+                        -webkit-box-pack justify
+                        -webkit-justify-content space-between
+                        -ms-flex-pack justify
+                        justify-content space-between
+                        width 100%
+                        margin-bottom 2.7%
+                        .noticiaSug
+                            width 100%
+                            height 120px
+                            overflow hidden
+                            display -webkit-box
+                            display -webkit-flex
+                            display -ms-flexbox
+                            display flex
+                            -webkit-box-pack justify
+                            -webkit-justify-content space-between
+                            -ms-flex-pack justify
+                            justify-content space-between
+                            .post
+                                width 49%
+                                background-color white
+                                display -webkit-box
+                                display -webkit-flex
+                                display -ms-flexbox
+                                display flex
+                                height 100%
+                                .imgPost
+                                    width 45%
+                                    height 100%
+                                    margin-left 4px
+                                    position relative
+                                    a 
+                                        position absolute
+                                        background-image -webkit-linear-gradient(0deg, rgba(77, 34, 113, .7), rgba(209, 13, 45, .7))
+                                        background-image linear-gradient(90deg, rgba(77, 34, 113, .7), rgba(209, 13, 45, .7))
+                                        height 100%
+                                        width 100%
+                                        display -webkit-box
+                                        display -webkit-flex
+                                        display -ms-flexbox
+                                        display flex
+                                        -webkit-box-pack center
+                                        -webkit-justify-content center
+                                        -ms-flex-pack center
+                                        justify-content center
+                                        -webkit-box-align center
+                                        -webkit-align-items center
+                                        -ms-flex-align center
+                                        align-items center
+                                        color white
+                                        text-decoration none
+                                        opacity 0
+                                        -webkit-transition opacity .5s ease-in-out
+                                        -moz-transition opacity .5s ease-in-out
+                                        -o-transition opacity .5s ease-in-out
+                                        -ms-transition opacity .5s ease-in-out
+                                        transition opacity .5s ease-in-out
+                                    a:hover
+                                        opacity 1
+                                    img 
+                                        width 100%
+                                        height 100%
+                                .contPost
+                                    width 55%
+                                    height 100%
+                                    display -webkit-box
+                                    display -webkit-flex
+                                    display -ms-flexbox
+                                    display flex
+                                    -webkit-box-pack center
+                                    -webkit-justify-content center
+                                    -ms-flex-pack center
+                                    justify-content center
+                                    -webkit-box-align center
+                                    -webkit-align-items center
+                                    -ms-flex-align center
+                                    align-items center
+                                    padding 0 5%
+                                    a 
+                                        text-decoration none
+                                        color grisoscuro
+                                        -webkit-transition opacity .5s ease-in-out
+                                        -moz-transition all .5s ease-in-out
+                                        -o-transition all .5s ease-in-out
+                                        -ms-transition all .5s ease-in-out
+                                        transition all .5s ease-in-out
+                                        h3
+                                            text-align center
+                                            text-transform uppercase
+                                    a:hover
+                                        color grisclaro
+            img 
+                height 100%
+                width 100%
 .up
     width 66px
     height 66px

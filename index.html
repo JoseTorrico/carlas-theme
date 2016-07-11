@@ -21,8 +21,8 @@
                 <ul>
                     <li><a href="index.html" class="active">Inicio</a></li>
                     <li><a href="eventos.html">Eventos</a></li>
-                    <li><a href="#">Noticias</a></li>
-                    <li><a href="#">Servicios</a></li>
+                    <li><a href="noticias.html">Noticias</a></li>
+                    <li><a href="servicios.html">Servicios</a></li>
                 </ul>
             </nav>
             <form action="">
@@ -70,7 +70,7 @@
         <div class="post">
             <article>
                 <div class="imagen">
-                    <a href="#">
+                    <a href="noticia.html">
                         <div class="leer">
                             <p>saber más</p>
                         </div>
@@ -87,12 +87,12 @@
                     <p>
                         So many of us are demotivated to achieve anything. Such people are not enthusiastic about anything. They don’t want to work towards any goal. Nothing motivates them to work. Why is it so? Why many of us are not
                     </p>
-                    <a class="saberMas" href="#">saber más</a>
+                    <a class="saberMas" href="noticia.html">saber más</a>
                 </div>
             </article>
             <article>
                 <div class="imagen">
-                    <a href="#">
+                    <a href="noticia.html">
                         <div class="leer">
                             <p>saber más</p>
                         </div>
@@ -109,12 +109,12 @@
                     <p>
                         So many of us are demotivated to achieve anything. Such people are not enthusiastic about anything. They don’t want to work towards any goal. Nothing motivates them to work. Why is it so? Why many of us are not
                     </p>
-                    <a class="saberMas" href="#">saber más</a>
+                    <a class="saberMas" href="noticia.html">saber más</a>
                 </div>
             </article>
             <article>
                 <div class="imagen">
-                    <a href="#">
+                    <a href="noticia.html">
                         <div class="leer">
                             <p>saber más</p>
                         </div>
@@ -131,12 +131,12 @@
                     <p>
                         So many of us are demotivated to achieve anything. Such people are not enthusiastic about anything. They don’t want to work towards any goal. Nothing motivates them to work. Why is it so? Why many of us are not
                     </p>
-                    <a class="saberMas" href="#">saber más</a>
+                    <a class="saberMas" href="noticia.html">saber más</a>
                 </div>
             </article>
             <article>
                 <div class="imagen">
-                    <a href="#">
+                    <a href="noticia.html">
                         <div class="leer">
                             <p>saber más</p>
                         </div>
@@ -153,12 +153,12 @@
                     <p>
                         So many of us are demotivated to achieve anything. Such people are not enthusiastic about anything. They don’t want to work towards any goal. Nothing motivates them to work. Why is it so? Why many of us are not
                     </p>
-                    <a class="saberMas" href="#">saber más</a>
+                    <a class="saberMas" href="noticia.html">saber más</a>
                 </div>
             </article>
         </div>
         <div class="botonBlog">
-            <a href="#">leer más</a>
+            <a href="noticias.html">leer más</a>
         </div>
     </section>
     <section class="eComerce">
@@ -200,7 +200,7 @@ de la abundancia</small></h3>
         <img class="fondo" src="images/general/fondo_video.jpg" alt="">
     </section>
     <div class="up">
-        <a href="#"><i class="fa fa-angle-double-up" aria-hidden="true"></i></a>
+        <a href="#inicio"><i class="fa fa-angle-double-up" aria-hidden="true"></i></a>
     </div>
     <footer>
         <div class="pie">
@@ -273,6 +273,15 @@ de la abundancia</small></h3>
     <script src="https://use.fontawesome.com/c217af99b2.js"></script>
     <script src="js/jquery-1.12.3.min.js"></script>
     <script src="js/retina.js"></script>
+    <script src="js/jquery.scrollTo.min.js"></script>
+    <script>
+        $("a[href='#inicio']").click(function () {
+            $("html, body").animate({
+                scrollTop: 0
+            }, "slow");
+            return false;
+        });
+    </script>
 </body>
 
 </html>

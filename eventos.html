@@ -22,8 +22,8 @@
                 <ul>
                     <li><a href="index.html">Inicio</a></li>
                     <li><a href="eventos.html" class="active">Eventos</a></li>
-                    <li><a href="#">Noticias</a></li>
-                    <li><a href="#">Servicios</a></li>
+                    <li><a href="noticias.html">Noticias</a></li>
+                    <li><a href="servicios.html">Servicios</a></li>
                 </ul>
             </nav>
             <form action="">
@@ -56,13 +56,13 @@
         </div>
     </header>
     <section id="slider">
-        <img src="images/slider/slider2.jpg" alt="slider 1" width="100%" height="100%">
+        <div class="sobre"></div>
+        <img src="images/eventos/header.jpg">
     </section>
     <section id="blog">
         <div class="events">
             <article>
                 <div class="imagen">
-                    <div class="sobre"></div>
                     <img src="images/eventos/evento1.jpg" alt="">
                 </div>
                 <div class="contenido">
@@ -116,7 +116,7 @@
                             <div class="distribucion">
                                 <i class="fa fa-credit-card-alt" aria-hidden="true"></i>
                                 <div class="contenido">
-                                    <h3>preventa</h3>
+                                    <h3>preventa<sup class="finalizado"> *finalizada</sup></h3>
                                     <p>Costo: <span class="fa fa-money"></span> Bs. 37.665,00</p>
                                     <p>Los pimeros 12 <span class="fa fa-users"></span> cupos</p>
                                     <p>O hasta: <span class="fa fa-calendar"></span> 09 Jul 2016</p>
@@ -180,7 +180,6 @@
             </article>
             <article>
                 <div class="imagen">
-                    <div class="sobre"></div>
                     <img src="images/eventos/evento2.jpg" alt="">
                 </div>
                 <div class="contenido">
@@ -234,7 +233,7 @@
                             <div class="distribucion">
                                 <i class="fa fa-credit-card-alt" aria-hidden="true"></i>
                                 <div class="contenido">
-                                    <h3>preventa</h3>
+                                    <h3>preventa<sup class="finalizado"> *finalizada</sup></h3>
                                     <p>Costo: <span class="fa fa-money"></span> Bs. 37.665,00</p>
                                     <p>Los pimeros 12 <span class="fa fa-users"></span> cupos</p>
                                     <p>O hasta: <span class="fa fa-calendar"></span> 09 Jul 2016</p>
@@ -298,7 +297,6 @@
             </article>
             <article>
                 <div class="imagen">
-                    <div class="sobre"></div>
                     <img src="images/eventos/evento3.jpg" alt="">
                 </div>
                 <div class="contenido">
@@ -317,7 +315,7 @@
                     <div class="detalles">
                         <div class="fecha">
                             <i class="fa fa-calendar" aria-hidden="true"></i>
-                            <h3>fechas</h3>
+                            <h3 class="cancelado">fechas</h3>
                             <p class="dia">28<sup>-31</sup></p>
                             <p class="mes">Ago 2016</p>
                             <p class="dia">01</p>
@@ -352,7 +350,7 @@
                             <div class="distribucion">
                                 <i class="fa fa-credit-card-alt" aria-hidden="true"></i>
                                 <div class="contenido">
-                                    <h3>preventa</h3>
+                                    <h3>preventa<sup class="finalizado"> *finalizada</sup></h3>
                                     <p>Costo: <span class="fa fa-money"></span> Bs. 37.665,00</p>
                                     <p>Los pimeros 12 <span class="fa fa-users"></span> cupos</p>
                                     <p>O hasta: <span class="fa fa-calendar"></span> 09 Jul 2016</p>
@@ -417,7 +415,7 @@
         </div>
     </section>
     <div class="up">
-        <a href="#"><i class="fa fa-angle-double-up" aria-hidden="true"></i></a>
+        <a href="#inicio"><i class="fa fa-angle-double-up" aria-hidden="true"></i></a>
     </div>
     <footer>
         <div class="pie">
@@ -490,6 +488,15 @@
     <script src="https://use.fontawesome.com/c217af99b2.js"></script>
     <script src="js/jquery-1.12.3.min.js"></script>
     <script src="js/retina.js"></script>
+    <script src="js/jquery.scrollTo.min.js"></script>
+    <script>
+        $("a[href='#inicio']").click(function () {
+            $("html, body").animate({
+                scrollTop: 0
+            }, "slow");
+            return false;
+        });
+    </script>
 </body>
 
 </html>
